@@ -1,10 +1,12 @@
+import debounce from './debounce';
+
 export default class ScrollAnimacao {
   constructor(sections, events, activeClass) {
     this.sections = document.querySelectorAll(sections);
     this.events = events;
     this.activeClass = activeClass;
     this.windowMetade = window.innerHeight * 0.6;
-    this.animaScroll = this.animaScroll.bind(this);
+    this.animaScroll = debounce(this.animaScroll.bind(this), 50);
   }
 
   animaScroll() {
