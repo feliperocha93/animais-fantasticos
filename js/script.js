@@ -5,6 +5,7 @@ import MenuMobile from './modules/menu-mobile';
 import Modal from './modules/modal';
 import ScrollAnimacao from './modules/scroll-animacao';
 import ScrollSuave from './modules/scroll-suave';
+import SlideNav from './modules/slide';
 import TabNav from './modules/tabnav';
 import initTooltip from './modules/tooltip.js';
 
@@ -36,6 +37,10 @@ scrollSuave.init();
 
 const tabnav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section', clickEvents, 'ativo');
 tabnav.init();
+
+const slide = new SlideNav('.slide', '.wrapper');
+slide.init();
+slide.addControl('.custom-controls');
 
 initTooltip();
 initFetchAnimais();
