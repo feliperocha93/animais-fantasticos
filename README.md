@@ -4,6 +4,6 @@ Site desenvolvido, de maneira didática, junto com o curso de JavaScript da Orig
 
 Na pasta ./js/modules existem diversos arquivos de JavaScript puro(Es6+) com features específícas muito comuns na web. 
 
-Para ver as features desenvolvidas: https://feliperocha93.github.io/origamid-classes-es6/
+Para ver as features desenvolvidas: https://feliperocha93.github.io/animais-fantasticos/
 
 
